@@ -58,8 +58,8 @@ const IndexPage = () => (
 
         <p>I have academic degrees in German and English (B.A. Mary Washington College, 1982) as well as Creative Writing (M.F.A. Naropa University, 2012)</p>
     </About> 
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <Link to="/reviews/">Reviews</Link> <br />
+    <Link to="/privacy/">Privacy</Link>
   </Layout>
    )}
   />

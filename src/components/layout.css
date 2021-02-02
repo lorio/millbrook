@@ -685,8 +685,11 @@ pre tt:after {
 
   header {
     background: no-repeat url("../images/background.jpg");
+    background-size: cover;
     margin-bottom: 0;
-    height: 65vh;
+    height: 100vh;
+    border: 3px solid var(--primary-color);
+    border-bottom: none;
   }
 
   main {
@@ -695,5 +698,10 @@ pre tt:after {
     border: 3px solid var(--primary-color);
     padding-top: 1em;
     ;
+  }
+
+  footer {
+    border: 3px solid var(--primary-color);
+    border-top: none;
   }
 }
