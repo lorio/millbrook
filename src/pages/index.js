@@ -6,8 +6,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 
-
-
 const Services = styled.section `
   max-width: 650px;
   margin: 0 auto;
@@ -20,6 +18,9 @@ const About = styled.section `
 `
 const SectionHeading = styled.h2 `
   text-align: center;
+`
+const Contact = styled.section `
+
 `
 
 const IndexPage = () => (
@@ -57,7 +58,13 @@ const IndexPage = () => (
         <p>In New York I worked with the poet and hypnotherapist Kristin Prevallet, who trained me as hypnotist. Since 2015 I have been a certified hypnotherapist with the IACT (International Association for Counselors and Therapists), where I continue as an active member.  In 2020 I received the certification as a Life Coach from the <a href="https://www.achievetoday.com">Achieve Today </a>company for personal development.</p>
 
         <p>I have academic degrees in German and English (B.A. Mary Washington College, 1982) as well as Creative Writing (M.F.A. Naropa University, 2012)</p>
-    </About> 
+    </About>
+    <Contact>
+      <SectionHeading>Get in touch!</SectionHeading>
+      <div id="Contact">
+      <p>Home of the future contact form.</p>
+      </div>
+    </Contact> 
     <Link to="/reviews/">Reviews</Link> <br />
     <Link to="/privacy/">Privacy</Link>
   </Layout>

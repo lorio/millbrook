@@ -19,6 +19,7 @@ module.exports = {
         // Add any options here
       },
    },
+   `gatsby-plugin-anchor-links`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

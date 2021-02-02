@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 import Image from "./image"
-import Navbar from "./Navbar/Navbar"
+import Nav from "./nav"
 
 
 const Subtitle = styled.h2 `
@@ -23,14 +23,14 @@ const Logo = styled.div`
   background-color: transparent;
 `
 
-const Header = ({ siteTitle, icon }) => (
+const Header = ({ siteTitle }) => (
   <header
     style={{
       position: `relative`,
       display: `flex`,
     }}
   >
-    <Navbar />
+    <Nav />
     <div
       style={{
         margin: 0,
