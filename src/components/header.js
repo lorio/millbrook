@@ -28,6 +28,8 @@ const Header = ({ siteTitle }) => (
     style={{
       position: `relative`,
       display: `flex`,
+      margin: `0 auto`,
+      maxWidth: 960,
     }}
   >
     <Nav />

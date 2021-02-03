@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-import { StaticQuery, graphql } from "gatsby"
+
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Img from "gatsby-image"
+
 
 const Services = styled.section `
   max-width: 650px;
@@ -18,25 +18,19 @@ const About = styled.section `
 `
 const SectionHeading = styled.h2 `
   text-align: center;
+  padding-top: 1em;
+`
+const VideoContainer = styled.section `
+  background-color: #00264d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
 `
 const Contact = styled.section `
-
 `
 
 const IndexPage = () => (
-   <StaticQuery
-    query={graphql`
-      {
-        poster: file(relativePath: {eq:
-        "poster.jpg"}) {
-          childImageSharp {
-          fluid(maxWidth: 650) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `} render={(data) => (
   <Layout>
     <SEO title="Home" />
     
@@ -48,9 +42,9 @@ const IndexPage = () => (
 
       <p><b>Spiritual Counsel</b>: Sometimes it’s good to just talk. As a counselor, I bring channeled information as well as a conversation. I transmit what I learn, what I hear and see which creates the basis of our conversation on spiritual evolution.</p> 
     </Services>
-    <div style={{ maxWidth: `600px`, margin: `0 auto 1.45rem` }}>
-      <Img fluid={data.poster.childImageSharp.fluid} alt="hillary" />
-    </div>
+    <VideoContainer>
+        <iframe width="420" height="237" title="welcome video" src="https://www.youtube.com/embed/VOuIGepsUVo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </VideoContainer>
     <About>
         <SectionHeading>About Hillary Keel</SectionHeading>
         <p>Born and raised in the USA, a large portion of my life was spent in Europe, where, among other things, I was drawn to meditative and healing practices. 2008:  first education and training in the Art of Channeling with <a href="www.channeling-healing.com">Rhiannon Augenthaler</a>, with whom I continue to train, as well as further work with the channel, <a href="https://universalcorewellness.com/loumartin/">Lou Martin</a>. Another significant part of this process was working as an interpreter (German/English) for the medium, <a href="https://maitra.net/">Maitra</a>.</p> 
@@ -68,8 +62,8 @@ const IndexPage = () => (
     <Link to="/reviews/">Reviews</Link> <br />
     <Link to="/privacy/">Privacy</Link>
   </Layout>
-   )}
-  />
+
+
 )
 
 export default IndexPage

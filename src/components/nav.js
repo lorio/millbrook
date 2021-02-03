@@ -7,6 +7,7 @@ const SiteNav = styled.div`
   position: fixed;
   flex-direction: row;
   justify-content: flex-end;
+  max-width: 960px;
   width: 100%;
   padding-top: 0.2rem;
   padding-right: 3vw;

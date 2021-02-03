@@ -40,6 +40,7 @@ const Layout = ({ children }) => {
         <footer
           style={{
             padding: `1em`,
+            backgroundColor: `#fef4f2`,
           }}
         >
           © {new Date().getFullYear()}, Millbrook Healing &nbsp;

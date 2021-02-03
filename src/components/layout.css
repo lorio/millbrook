@@ -14,6 +14,7 @@ html {
 
 body {
   margin: 0;
+  background-color: rgba(0, 38, 77, .2);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--primary-color);
@@ -678,11 +679,32 @@ pre tt:after {
   content: "";
 }
 
-header nav {
-  color: var(--primary-color);
+iframe {
+  margin-bottom: 0
 }
 
-@media only screen and (max-width: 480px) {
+header {
+  background-size: cover;
+  margin-bottom: 0;
+  height: 100vh;
+  border: 3px solid var(--primary-color);
+  border-bottom: none;
+}
+
+
+main {
+  background: repeat-y url("../images/wash.jpg");
+  background-size: 100vw;
+  border: 3px solid var(--primary-color);
+  padding-top: 1em;
+}
+
+footer {
+  border: 3px solid var(--primary-color);
+  border-top: none;
+}
+
+@media only screen and (max-width: 768px) {
   html {
     font-size: 100%;
   }
@@ -690,22 +712,16 @@ header nav {
   header {
     background: no-repeat url("../images/background.jpg");
     background-size: cover;
-    margin-bottom: 0;
     height: 100vh;
-    border: 3px solid var(--primary-color);
-    border-bottom: none;
-  }
 
-  main {
-    background: repeat-y url("../images/wash.jpg");
-    background-size: 100vw;
-    border: 3px solid var(--primary-color);
-    padding-top: 1em;
-    ;
   }
+}
 
-  footer {
-    border: 3px solid var(--primary-color);
-    border-top: none;
+@media only screen and (min-width: 769px) {
+  header {
+    background: no-repeat url("../images/adobe-brook.jpg");
+    background-size: cover;
+    height: 100vh;
+
   }
 }
