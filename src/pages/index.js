@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import Comments from "../components/Comments"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ContactForm from "../components/ContactForm"
 
 
 const Services = styled.section `
@@ -26,6 +27,9 @@ const VideoContainer = styled.section `
   justify-content: center;
   align-items: center;
   padding: 20px 0;
+`
+const Testimonials = styled.section`
+  padding: 0 20px;
 `
 const Contact = styled.section `
 `
@@ -53,10 +57,14 @@ const IndexPage = () => (
 
         <p>I have academic degrees in German and English (B.A. Mary Washington College, 1982) as well as Creative Writing (M.F.A. Naropa University, 2012)</p>
     </About>
+    <Testimonials>
+      <SectionHeading>What they found</SectionHeading>
+      <Comments />
+    </Testimonials>
     <Contact>
       <SectionHeading>Get in touch!</SectionHeading>
       <div id="Contact">
-      <p>Home of the future contact form.</p>
+      <ContactForm />
       </div>
     </Contact> 
     <Link to="/reviews/">Reviews</Link> <br />
