@@ -18,8 +18,12 @@ const About = styled.section `
   padding: 0 1.45em;
 `
 const SectionHeading = styled.h2 `
+  color:  #00264d;
   text-align: center;
   padding-top: 1em;
+`
+const DarkSectionHeading = styled(SectionHeading)`
+  color: #fef4f2;
 `
 const VideoContainer = styled.section `
   background-color: #00264d;
@@ -32,6 +36,8 @@ const Testimonials = styled.section`
   padding: 0 20px;
 `
 const Contact = styled.section `
+  background-color: #00264d;
+  color: white;
 `
 
 const IndexPage = () => (
@@ -62,7 +68,7 @@ const IndexPage = () => (
       <Comments />
     </Testimonials>
     <Contact>
-      <SectionHeading>Get in touch!</SectionHeading>
+      <DarkSectionHeading>Get in touch!</DarkSectionHeading>
       <div id="Contact">
       <ContactForm />
       </div>

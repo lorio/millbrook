@@ -5,6 +5,7 @@ html {
   -webkit-text-size-adjust: 100%;
   --primary-color: #00264d;
   --link-color: #3373f6;
+  --background-color: #fef4f2;
   --display-font: 'Red Rose', sans-serif;
   --system-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", arial, sans-serif;
   font: 112.5%/1.45em var(--system-font);
@@ -196,6 +197,7 @@ select,
 textarea {
   font: inherit;
   margin: 0;
+  padding: 0 10px;
 }
 
 optgroup {
@@ -257,6 +259,7 @@ legend {
 }
 
 textarea {
+
   overflow: auto;
 }
 
@@ -506,6 +509,10 @@ form {
   margin-bottom: 1.45rem;
 }
 
+form>* {
+  box-sizing: border-box;
+}
+
 noscript {
   margin-left: 0;
   margin-right: 0;
@@ -699,6 +706,60 @@ main {
   padding-top: 1em;
 }
 
+form {
+  box-sizing: border-box;
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "contact message"
+    "...button";
+  grid-template-rows: 12em 2em;
+  grid-template-columns: 12em 1fr;
+  background: var(--primary-color);
+  gap: .8em;
+  font-weight: 400;
+  padding: 3em;
+}
+
+form>label {
+  grid-area: labels;
+}
+
+form>input {
+  grid-area: contact;
+  width: 100%;
+  padding: 1.1em;
+  border: none;
+  margin-bottom: 1em;
+}
+
+form textarea {
+  min-height: calc(100% - 2em);
+  width: 100%;
+  border: none;
+
+}
+
+#contactInfo {
+  grid-area: contact;
+  background: var(--primary-color);
+}
+
+#messageBox {
+  grid-area: message / 4;
+  background: var(--primary-color);
+}
+
+form>button {
+  grid-area: button;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  background-color: var(--link-color);
+  color: var(--background-color);
+  font-weight: 700;
+}
+
 footer {
   border: 3px solid var(--primary-color);
   border-top: none;
@@ -714,6 +775,10 @@ footer {
     background-size: cover;
     height: 100vh;
 
+  }
+
+  form {
+    display: block;
   }
 }
 
