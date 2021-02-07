@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@600..700&display=swap');
 
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -706,13 +707,14 @@ main {
   padding-top: 1em;
 }
 
-form {
+/* form {
   box-sizing: border-box;
+  position: relative;
   display: grid;
   width: 100%;
   grid-template-areas:
-    "contact message"
-    "...button";
+    "contact message";
+
   grid-template-rows: 12em 2em;
   grid-template-columns: 12em 1fr;
   background: var(--primary-color);
@@ -752,13 +754,80 @@ form textarea {
 
 form>button {
   grid-area: button;
-  border-radius: 50%;
-  height: 80px;
+  border-radius: 10%;
+  height: 40px;
   width: 80px;
   background-color: var(--link-color);
   color: var(--background-color);
   font-weight: 700;
+} */
+form {
+  max-width: 880px;
+  height: 275;
+  margin: 0 auto;
+  padding: 16px;
 }
+
+.user-info {
+  width: 400px;
+  float: left;
+}
+
+.message-box {
+  float: right;
+  width: 420px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e4;
+  border-radius: 3px;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 8px 18px;
+  width: 100%;
+  color: inherit;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 16px;
+  transition: all .2s ease;
+  resize: none;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 2px solid rgba(0, 38, 77, .2);
+}
+
+label {
+  display: block;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+  background-color: var(--link-color);
+  color: var(--background-color);
+  font-weight: 700;
+}
+
+/* //////////footer////////// */
 
 footer {
   border: 3px solid var(--primary-color);

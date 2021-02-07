@@ -34,10 +34,15 @@ const VideoContainer = styled.section `
 `
 const Testimonials = styled.section`
   padding: 0 20px;
+  border-top: 3px solid #00264d;
+  border-bottom: 3px solid #00264d;
 `
 const Contact = styled.section `
-  background-color: #00264d;
-  color: white;
+  background-color: rgba(0, 38, 77, .2);
+  color: #00264d;
+  min-height: 350px;
+  border-bottom: 3px solid #00264d;
+
 `
 
 const IndexPage = () => (
@@ -68,7 +73,7 @@ const IndexPage = () => (
       <Comments />
     </Testimonials>
     <Contact>
-      <DarkSectionHeading>Get in touch!</DarkSectionHeading>
+      <SectionHeading>Get in touch!</SectionHeading>
       <div id="Contact">
       <ContactForm />
       </div>

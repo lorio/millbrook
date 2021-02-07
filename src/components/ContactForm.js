@@ -9,17 +9,18 @@ const ContactForm = (props) => (
     >
     <input type="hidden" name="bot-field" />
     <input type="hidden" name="form-name" value="contact" />
-    <div id="contactInfo">
+    <div class="user-info">
         <label htmlFor="name">Name *</label>
         <input type="text" name="name" id="name" aria-required/>
         <label htmlFor="email">Email *</label>
         <input type="text" name="email" id="email" aria-required/>
     </div>
-    <div id="messageBox">
-        <label htmlFor="message">Your issues or interests</label>
+    <div class="message-box">
+        <label htmlFor="message">Your issues or interests *</label>
         <textarea name="message" id="message" rows="6"></textarea>
+        <button type="submit">Send</button>
     </div>
-      <button type="submit">Send</button>
+      
   </form>
            
 )
