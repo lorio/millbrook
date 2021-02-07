@@ -763,9 +763,9 @@ form>button {
 } */
 form {
   max-width: 880px;
-  height: 275;
+  padding: 0 10px;
   margin: 0 auto;
-  padding: 16px;
+
 }
 
 form::after {
@@ -775,13 +775,13 @@ form::after {
 }
 
 .user-info {
-  width: 400px;
+  width: 40%;
   float: left;
 }
 
 .message-box {
   float: right;
-  width: 420px;
+  width: 50%;
 }
 
 input[type="text"],
@@ -798,7 +798,7 @@ textarea {
   width: 100%;
   color: inherit;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   transition: all .2s ease;
   resize: none;
 }
@@ -818,12 +818,11 @@ label {
   line-height: 24px;
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 4px;
 }
 
 button {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 1em;
   border: 0;
   border-radius: 5px;
   height: 40px;

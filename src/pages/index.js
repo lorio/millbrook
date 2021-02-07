@@ -40,9 +40,7 @@ const Testimonials = styled.section`
 const Contact = styled.section `
   background-color: rgba(0, 38, 77, .2);
   color: #00264d;
-  min-height: 350px;
   border-bottom: 3px solid #00264d;
-
 `
 
 const IndexPage = () => (

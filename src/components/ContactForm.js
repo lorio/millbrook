@@ -17,7 +17,7 @@ const ContactForm = (props) => (
     </div>
     <div class="message-box">
         <label htmlFor="message">Your issues or interests *</label>
-        <textarea name="message" id="message" rows="6"></textarea>
+        <textarea name="message" id="message" rows="5"></textarea>
         <button type="submit">Send</button>
     </div>
       
