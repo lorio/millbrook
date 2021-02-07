@@ -768,6 +768,12 @@ form {
   padding: 16px;
 }
 
+form::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .user-info {
   width: 400px;
   float: left;
