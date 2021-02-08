@@ -768,12 +768,6 @@ form {
 
 }
 
-form::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .user-info {
   width: 40%;
   float: left;
@@ -781,7 +775,7 @@ form::after {
 
 .message-box {
   float: right;
-  width: 50%;
+  width: 58%;
 }
 
 input[type="text"],
@@ -808,9 +802,8 @@ input::placeholder {
 }
 
 input:focus,
-textarea:focus,
-select:focus {
-  border: 2px solid rgba(0, 38, 77, .2);
+textarea:focus {
+  border-color: rgba(0, 38, 77, .2);
 }
 
 label {
@@ -848,11 +841,33 @@ footer {
     background: no-repeat url("../images/background.jpg");
     background-size: cover;
     height: 100vh;
-
   }
 
   form {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .message-box,
+  .user-info {
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+
+  }
+
+  .message-box {
+    padding-bottom: 1px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  form::after {
+    content: "";
+    display: block;
+    clear: both;
   }
 }
 
@@ -861,6 +876,5 @@ footer {
     background: no-repeat url("../images/brook960.jpg");
     background-size: cover;
     height: 100vh;
-
   }
 }

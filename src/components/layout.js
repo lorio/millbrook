@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import { Link } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
@@ -43,8 +43,7 @@ const Layout = ({ children }) => {
             backgroundColor: `#fef4f2`,
           }}
         >
-          © {new Date().getFullYear()}, Millbrook Healing &nbsp;
-          <a href="millbrook.healing@gmail.com">email</a>
+          © {new Date().getFullYear()}, Millbrook Healing | millbrook.healing (@) gmail.com | <Link to="/privacy/">Privacy policy</Link>
         </footer>
       </div>
     </>

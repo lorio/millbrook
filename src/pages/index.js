@@ -40,7 +40,6 @@ const Testimonials = styled.section`
 const Contact = styled.section `
   background-color: rgba(0, 38, 77, .2);
   color: #00264d;
-  border-bottom: 3px solid #00264d;
 `
 
 const IndexPage = () => (
@@ -76,11 +75,7 @@ const IndexPage = () => (
       <ContactForm />
       </div>
     </Contact> 
-    <Link to="/reviews/">Reviews</Link> <br />
-    <Link to="/privacy/">Privacy</Link>
   </Layout>
-
-
 )
 
 export default IndexPage
