@@ -30,14 +30,14 @@ const CommentText = styled.p`
 const Comments = (props) => (
   <Container>
     <Item>
-        <CommentText>Hillary helped me locate and assert my identity and the tremendous personal power and strength that it brings.</CommentText><By> — Mahet</By><CommentText>My friend and I regularly do sessions with Hillary when he comes into town. Hillary has been able to channel answers to questions in surprising detail. Very profound stuff, highly recommend.</CommentText> <By> — EC, New York City
+        <CommentText>Hillary helped me locate and assert my identity and the tremendous personal power and strength that it brings.</CommentText><By> — Mahet, New York City</By><CommentText>My friend and I regularly do sessions with Hillary when he comes into town. Hillary has been able to channel answers to questions in surprising detail. Very profound stuff, highly recommend.</CommentText> <By> — EC, New York City
 </By>
     </Item>
     <Item>
         <CommentText>Hillary Keel’s prescient advice has given me a useful sense of situational awareness and led me to appreciate all people and events in my life, as well as the wonders of Nature and the environment in which we live. I would highly recommend her services!</CommentText> <By> — G.S., San Francisco</By>
     </Item>
     <Item>
-        <CommentText>By the end of each session with Hillary I was already very much looking forward to the next one, a whole week later...[It's] a privilege to enter Hillary's realm of wisdom, communication, insight, empathy and training, her expertise combined with her personal warmth and human kindness.</CommentText><By> — Susanne, Vienna, January 2021</By>
+        <CommentText>By the end of each session with Hillary I was already very much looking forward to the next one, a whole week later...[It's] a privilege to enter Hillary's realm of wisdom, communication, insight, empathy and training, her expertise combined with her personal warmth and human kindness.</CommentText><By> — Susanne, Vienna, Austria January 2021</By>
     </Item>
 </Container>
 
