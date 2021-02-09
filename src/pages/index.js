@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ContactForm from "../components/ContactForm"
+import { siteMetadata } from "../../gatsby-config"
 
 
 const Services = styled.section `
@@ -40,7 +41,9 @@ const Contact = styled.section `
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Millbrook Healing"
+          description={siteMetadata.description}
+    />
     
     <Services>
       <SectionHeading>Find your flow ...</SectionHeading>
