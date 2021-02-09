@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Comments from "../components/Comments"
 import styled from "styled-components"
 import Layout from "../components/layout"
@@ -21,9 +20,6 @@ const SectionHeading = styled.h2 `
   color:  #00264d;
   text-align: center;
   padding-top: 1em;
-`
-const DarkSectionHeading = styled(SectionHeading)`
-  color: #fef4f2;
 `
 const VideoContainer = styled.section `
   background-color: #00264d;

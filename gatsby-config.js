@@ -19,7 +19,7 @@ module.exports = {
         // Add any options here
       },
    },
-   `gatsby-plugin-anchor-links`,
+    `gatsby-plugin-anchor-links`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -34,6 +34,18 @@ module.exports = {
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-modal-routing`,
+      options: {
+        // A selector to set react-modal's app root to, default is `#___gatsby`
+        // See http://reactcommunity.org/react-modal/accessibility/#app-element
+        appElement: '#___gatsby',
+
+        // Object of props that will be passed to the react-modal container
+        // See http://reactcommunity.org/react-modal/#usage
+        modalProps: { },
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -43,7 +43,14 @@ const Layout = ({ children }) => {
             backgroundColor: `#fef4f2`,
           }}
         >
-          © {new Date().getFullYear()}, Millbrook Healing | millbrook.healing (@) gmail.com | <Link to="/privacy/">Privacy policy</Link>
+          © {new Date().getFullYear()}, Millbrook Healing | millbrook.healing (@) gmail.com | 
+          <Link to="/privacy/"
+            state={{
+              modal: true
+            }}
+          >
+          Privacy policy
+          </Link>
         </footer>
       </div>
     </>

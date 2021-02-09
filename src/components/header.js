@@ -18,7 +18,7 @@ const Subtitle = styled.h2 `
 const Logo = styled.div`
   height: 150;
   width: 150;
-  padding:20px;
+  padding: 20px;
   z-index: 30;
   background-color: transparent;
 `
