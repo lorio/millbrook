@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { Link } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
@@ -43,14 +42,7 @@ const Layout = ({ children }) => {
             backgroundColor: `#fef4f2`,
           }}
         >
-          © {new Date().getFullYear()}, Millbrook Healing | millbrook.healing (@) gmail.com | 
-          <Link to="/privacy/"
-            state={{
-              modal: true
-            }}
-          >
-          Privacy policy
-          </Link>
+          © {new Date().getFullYear()}, Millbrook Healing | millbrook.healing (@) gmail.com | Box 94, Pond Eddy, NY 12770
         </footer>
       </div>
     </>
