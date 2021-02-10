@@ -803,7 +803,9 @@ input::placeholder {
 
 input:focus,
 textarea:focus {
-  border-color: rgba(0, 38, 77, .2);
+  box-shadow: 2px 0px 4px 0px rgba(0, 38, 77, 0.75) inset;
+  -webkit-box-shadow: 2px 0px 4px 0px rgba(0, 38, 77, 0.75) inset;
+  -moz-box-shadow: 2px 0px 4px 0px rgba(0, 38, 77, 0.75) inset;
 }
 
 label {
@@ -830,6 +832,7 @@ button {
 footer {
   border: 3px solid var(--primary-color);
   border-top: none;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {

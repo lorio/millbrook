@@ -37,9 +37,13 @@ const LinkItem = styled(AnchorLink)`
 
 const Nav = () => (
   <SiteNav>
-    <NavList>
+    <NavList role="menu">
       <ListItem>
-        <LinkItem to="/#Contact">Contact</LinkItem>
+        <LinkItem 
+          to="/#Contact"
+          role="menuitem"
+          >Contact
+        </LinkItem>
       </ListItem>
     </NavList>
   </SiteNav>
