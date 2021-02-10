@@ -58,9 +58,9 @@ const IndexPage = () => (
     </VideoContainer>
     <About>
         <SectionHeading>About Hillary Keel</SectionHeading>
-        <p>Born and raised in the USA, a large portion of my life was spent in Europe, where, among other things, I was drawn to meditative and healing practices. 2008: first education and training in the Art of Channeling with Rhiannon Augenthaler, with whom I continue to train, as well as further work with the channel, Lou Martin. Another significant part of this process was working as an interpreter (German/English) for the medium, Maitra.</p>
+        <p>Born and raised in the USA, a large portion of my life was spent in Europe, where, among other things, I was drawn to meditative and healing practices. In 2008 I first began training in the Art of Channeling with Rhiannon Augenthaler. I have also worked with the channel Lou Martin, as well as for the medium, Maitra, as an interpreter (German-English).</p>
 
-        <p>In New York I worked with the poet and hypnotherapist Kristin Prevallet, who trained me as hypnotist. Since 2015 I have been a certified hypnotherapist with the IACT (International Association for Counselors and Therapists), where I continue as an active member.  In 2020 I received the certification as a Life Coach from the Achieve Today company for personal development.</p>
+        <p>In the USA I worked with the poet and hypnotherapist Kristin Prevallet, who trained me as hypnotist. Since 2015 I have been a certified hypnotherapist with the IACT (International Association for Counselors and Therapists), where I continue as an active member.  In 2020 I received the certification as a Life Coach from the Achieve Today company for personal development.</p>
 
         <p>I have academic degrees in German and English (B.A. Mary Washington College, 1982) as well as Creative Writing (M.F.A. Naropa University, 2012)</p>
     </About>
