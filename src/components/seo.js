@@ -28,6 +28,7 @@ function SEO({ description, lang, meta, title, image }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const metaImage = site.siteMetadata?.image
 
   return (
     <Helmet
@@ -55,7 +56,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:image`,
-          content: image,
+          content: metaImage,
         },
         {
           name: `twitter:card`,
