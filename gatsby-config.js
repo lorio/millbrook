@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Millbrook Healing`,
     description: `Millbrook Healing offers services and support in creating change, motivation, or spiritual evolution in your life. This can be done by way of life coaching, channeled counsel, or hypnotherapy. Contact Millbrook Healing for a free consultation.`,
-    image: `http://millbrookhealing.com/images/background.jpg`,
+    image: `https://millbrookhealing.com/static/background-5d05b5b241aab782f00cdfb0f400efb5.jpg`,
     author: `Hillary Keel`
   },
   plugins: [
