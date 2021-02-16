@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Millbrook Healing`,
     description: `Millbrook Healing offers services and support in creating change, motivation, or spiritual evolution in your life. This can be done by way of life coaching, channeled counsel, or hypnotherapy. Contact Millbrook Healing for a free consultation.`,
+    image: `background.jpg`,
     author: `Hillary Keel`
   },
   plugins: [
@@ -35,18 +36,6 @@ module.exports = {
         legacy: false,
       },
     },
-    {
-      resolve: `gatsby-plugin-modal-routing`,
-      options: {
-        // A selector to set react-modal's app root to, default is `#___gatsby`
-        // See http://reactcommunity.org/react-modal/accessibility/#app-element
-        appElement: '#___gatsby',
-
-        // Object of props that will be passed to the react-modal container
-        // See http://reactcommunity.org/react-modal/#usage
-        modalProps: { },
-      }
-    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
