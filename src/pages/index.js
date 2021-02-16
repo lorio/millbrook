@@ -54,7 +54,7 @@ const IndexPage = () => (
       <p><b>Spiritual Counsel</b>: Sometimes it’s good to just talk. As a counselor, I bring channeled information as well as a conversation. I transmit what I learn, what I hear, and see which creates the basis of our conversation on spiritual evolution.</p>
     </Services>
     <VideoContainer>
-        <iframe width="420" height="237" title="welcome video" src="https://www.youtube.com/embed/VOuIGepsUVo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="420" height="237" title="welcome video" src="https://www.youtube.com/embed/VOuIGepsUVo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     </VideoContainer>
     <About>
         <SectionHeading>About Hillary Keel</SectionHeading>
